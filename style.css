@@ -1,0 +1,87 @@
+html {
+  height: 100%;
+  width: 100%;
+  background-image: url("https://wallpapercave.com/wp/wp1839581.jpg");
+  background-position: 50% 25%;
+  background-size: cover;
+  user-select: none;
+  background-repeat: no-repeat;
+  font-family: "Yu Gothic", roboto, monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#drum-machine {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  text-align: center;
+  vertical-align: center;
+  color: #D73433;
+}
+
+#soundboard {
+  display: flex;
+  flex-direction: row;
+  max-width: 600px;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  border: 1px solid #01278D;
+}
+
+#keyContainer {
+  width: 400px;
+  margin: 0 -15px;
+}
+
+.drum-pad {
+  border: 1px solid #D73433;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 85px;
+  height: 85px;
+  margin: 10px;
+  transition: all 0.1s;
+  display: inline-block;
+  position: relative;
+}
+
+.drum-pad:hover {
+  background: #D73433;
+  color: black;
+}
+
+.drum-pad:active {
+  background: #01278D;
+  color: black;
+}
+
+.drum-pad > span {
+  font-size: 2.4rem;
+  font-weight: 400;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#display {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+#name {
+  background: white;
+}
+
+.playing {
+  transform: scale(1.1);
+  border-color: #01278D;
+  box-shadow: 0 0 1rem #01278D;
+}
